@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe 2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="logo">
+        <img src="./assets/logo.svg" alt="logo">
+    </div>
+    <div class="modal">
+        <div class="chooseToggle sign">
+            <p>Choose your SIGN :</p>
+            <div class="ChooseSign">
+                <input type="checkbox" class="switch" id="sign">
+                <label for="sign"></label>
+            </div>
+        </div>
+        <div class="chooseToggle FriendorBot">
+            <p>Choose your Game Mode :</p>
+            <div class="ChooseOpponent">
+                <input type="checkbox" class="switch" id="opponent">
+                <label for="opponent"></label>
+            </div>
+        </div>
+        <!-- <div class="choose size">
+            <p>Choose Size of the Board :</p>
+            <button class="size-button" value="3">Small</button>
+            <button class="size-button" value="5">Medium</button>
+            <button class="size-button" value="7">Large</button>
+        </div> -->
+        <!-- <div class="choose difficulty deactive">
+            <p>Choose the Difficulty Level :</p>
+            <button class="difficulty-button" value="3">Easy</button>
+            <button class="difficulty-button" value="5">Medium</button>
+            <button class="difficulty-button" value="15">Hard</button>
+        </div> -->
+        <p>REMEMBER: X GOES FIRST</p>
+        <button class="Start">START</button>
+    </div>
+
+    <div class="main-area">
+        <button class="reset deactive"><img src="./assets/icon-restart.svg" alt="reset"></button>
+        <div class="game-area"></div>
+        <section class="main__summary-section deactive">
+            <section class="main__summary">
+                <p class="main__display-name">Player X</p>
+                <h2 class="main__score-displayer playerX">0</h2>
+            </section>
+            <section class="main__summary">
+                <p class="main__display-name">Ties</p>
+                <h2 class="main__score-displayer Tie">0</h2>
+            </section>
+            <section class="main__summary">
+                <p class="main__display-name">Player O</p>
+                <h2 class="main__score-displayer playerO">0</h2>
+            </section>
+        </section>
+    </div>
+
+    <div class="confirmation deactive">
+        <div class="confirmation-modal">
+            <h3 class="Congrats">Congratulations!</h3>
+            <div class="won">
+            </div>
+            <div class="exitButtons">
+                <button class="Quit">Quit</button>
+                <button class="Continue">Continue</button>
+                <button class="NewRound">New Round</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Animation -->
+    <div class="loading deactive">
+        <div class="loader">
+            <div class="loadX">
+                <img src="./assets/icon-x.svg" alt="X">
+            </div>
+            <div class="loadO">
+                <img src="./assets/icon-o.svg" alt="O">
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="script.js"></script>
+
+</html>
