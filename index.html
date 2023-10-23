@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic Tac Toe 2.0</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./assets/favicon-16x16.png" type="image/x-icon">
 </head>
 
@@ -23,7 +23,7 @@
             </div>
         </div>
         <div class="chooseToggle FriendorBot">
-            <p>Choose your Game Mode :</p>
+            <p>Choose your Opponent :</p>
             <div class="ChooseOpponent">
                 <input type="checkbox" class="switch" id="opponent">
                 <label for="opponent"></label>
@@ -46,7 +46,10 @@
     </div>
 
     <div class="main-area">
-        <button class="reset deactive"><img src="./assets/icon-restart.svg" alt="reset"></button>
+        <div class="buttons">
+            <button class="home deactive"><img src="./assets/icon-left.svg" alt="left-arrow"></button>
+            <button class="reset deactive"><img src="./assets/icon-restart.svg" alt="reset"></button>
+        </div>
         <div class="game-area"></div>
         <section class="main__summary-section deactive">
             <section class="main__summary">

@@ -6,6 +6,7 @@ const playerswitch = document.querySelector('.switch')
 const gameArea = document.querySelector('.game-area')
 const loader = document.querySelector('.loading')
 const resetButton = document.querySelector('.reset')
+const homeButton = document.querySelector('.home')
 const confirmation = document.querySelector('.confirmation')
 const quit = document.querySelector(".Quit")
 const Continue = document.querySelector(".Continue")
@@ -96,6 +97,7 @@ start.addEventListener('click', () => {
             BotVsPlayer()
 
         resetButton.classList.remove('deactive')
+        homeButton.classList.remove('deactive')
         summary.classList.remove('deactive')
     }, 2000)
 })
@@ -284,6 +286,19 @@ logo.addEventListener('click', () => {
     document.querySelector(".NewRound").classList.add('deactive')
 })
 
+homeButton.addEventListener('click', () => {
+    if (!gameArea.firstChild) {
+        location.reload()
+        return;
+    }
+
+    confirmation.classList.remove('deactive')
+    Continue.classList.remove('deactive')
+    document.querySelector('.Congrats').classList.add('deactive')
+    document.querySelector('.won').classList.add('deactive')
+    document.querySelector(".NewRound").classList.add('deactive')
+})
+
 quit.addEventListener('click', () => {
     confirmation.classList.add('deactive')
     document.querySelector('.Congrats').classList.remove('deactive')
@@ -376,7 +391,6 @@ function verify() {
 }
 
 const won = (temp) => {
-
     setTimeout(function () {
         document.querySelector('.Congrats').classList.remove('deactive')
         msg.style.gridTemplateColumns = '0.15fr 1fr';
