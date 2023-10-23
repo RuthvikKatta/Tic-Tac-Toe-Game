@@ -193,10 +193,12 @@ body {
     display: flex;
     width: 100%;
     justify-content: space-between;
+    height: 2.5rem;
+    align-items: center;
 }
 
 .reset, .home{
-    /* padding: 20px 35px; */
+    padding: 10px 25px;
     border-radius: 5px;
     cursor: pointer;
     transition: scale 150ms ease-in-out;

@@ -278,7 +278,7 @@ logo.addEventListener('click', () => {
         location.reload()
         return;
     }
-
+    
     confirmation.classList.remove('deactive')
     Continue.classList.remove('deactive')
     document.querySelector('.Congrats').classList.add('deactive')
@@ -309,6 +309,9 @@ quit.addEventListener('click', () => {
 
 Continue.addEventListener('click', () => {
     confirmation.classList.add('deactive')
+    document.querySelector('.Congrats').classList.remove('deactive')
+    document.querySelector('.won').classList.remove('deactive')
+    document.querySelector(".NewRound").classList.remove('deactive')
 })
 
 newRound.addEventListener('click', () => {
